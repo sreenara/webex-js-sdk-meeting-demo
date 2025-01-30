@@ -102,7 +102,8 @@ async function initWebexAndRegisterDevice(access_token) {
 
 async function createMeeting() {
   // MeetingInfo object being referenced from meeting-info.js
-  const meeting = await webex.meetings.create(meetingInfo.sipAddress);
+  // const meeting = await webex.meetings.create(meetingInfo.sipAddress);
+  const meeting = await webex.meetings.create('+19198871054');
 
   createdMeeting = meeting;
 }
@@ -181,7 +182,7 @@ async function joinMeetingWithMedia(localStreams) {
 }
 
 async function leaveMeeting() {
-  leaveMeetingBtn.innerHTML = "Leaving...";
+  leaveMeetingBtn.innerHTML = "Ending Call...";
   leaveMeetingBtn.disabled = true;
 
   await createdMeeting.leave();
@@ -189,7 +190,7 @@ async function leaveMeeting() {
 }
 
 export async function joinMeeting() {
-  joinWithMediaBtn.innerHTML = "Joining...";
+  joinWithMediaBtn.innerHTML = "Calling...";
   joinWithMediaBtn.disabled = true;
   joinWithMediaBtn.style.backgroundColor = "grey";
   joinWithMediaBtn.style.cursor = "default";
@@ -265,14 +266,14 @@ async function disableBNR() {
 function reset() {
   // Join meeting button
   joinWithMediaBtn.style.display = "block";
-  joinWithMediaBtn.innerHTML = "Join";
+  joinWithMediaBtn.innerHTML = "Call";
   joinWithMediaBtn.disabled = false;
   joinWithMediaBtn.style.backgroundColor = "#59b15d";
   joinWithMediaBtn.style.cursor = "pointer";
 
   // Leave meeting button
   leaveMeetingBtn.style.display = "none";
-  leaveMeetingBtn.innerHTML = "Leave";
+  leaveMeetingBtn.innerHTML = "End Call";
   leaveMeetingBtn.disabled = false;
 
   cleanUpMedia();
