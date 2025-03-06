@@ -217,67 +217,67 @@
         </div>
       </div>
     </div>
-    <div class="formModal" id="#formModal">
-      <div>
-        <p
-          style="
-            color: grey;
-            position: absolute;
-            left: 95%;
-            top: -1%;
-            cursor: pointer;
-            font-size: 1.5rem;
-          "
-          onclick="closeModal()"
-        >
-          X
-        </p>
-        <div style="text-align: center">
-          <p style="font-size: x-large; margin: 0px">How can we help you</p>
-          <p style="color: grey; margin-bottom: 20px">
-            Please choose an option bellow
-          </p>
-        </div>
-        <h2>Smart TV - Electronics - Delivered - 2024-03-19</h2>
+    <div class="formModal" id="#formModal" style="background-color: rgb(16, 53, 97);">
+    <div>
+      <p
+      style="
+      color: grey;
+      position: absolute;
+      left: 95%;
+      top: -1%;
+      cursor: pointer;
+      font-size: 1.5rem;
+      "
+      onclick="closeModal()"
+      >
+      X
+      </p>
+      <div style="text-align: center">
+      <p style="color: aliceblue; font-size: x-large; margin: 0px">How can we help you</p>
+      <p style="color: aliceblue; margin-bottom: 20px">
+      Please choose an option below
+      </p>
+      </div>
+      <h2 style="color: aliceblue;"">Smart TV - Electronics - Delivered - 2024-03-19</h2>
 
-        <p>What do you need assistance with?</p>
-        <div
-          style="display: flex; width: 50%"
-          onclick="handlerAssistanceOnchange()"
-        >
-          <div class="radio-container">
-            <input type="radio" name="return" id="return" />
-            <label for="return">Return</label>
-          </div>
+      <p style="color: aliceblue;">What do you need assistance with?</p>
+      <div
+      style="display: flex; width: 50%"
+      onclick="handlerAssistanceOnchange()"
+      >
+      <div class="radio-container">
+      <input type="radio" name="return" id="return" />
+      <label style="color: aliceblue;" for="return">Return</label>
+      </div>
 
-          <div class="radio-container">
-            <input type="radio" name="assistance" id="assistance" />
-            <label for="assistance">Installation</label>
-          </div>
-        </div>
+      <div class="radio-container">
+      <input type="radio" name="assistance" id="assistance" />
+      <label style="color: aliceblue;" for="assistance">Installation</label>
+      </div>
+      </div>
 
-        <div id="support-row">
-          <p>What kind kind of support you are looking for?</p>
-          <div
-            style="display: flex; width: 50%"
-            onchange="handlerSupportOnchange()"
-          >
-            <div class="radio-container">
-              <input type="radio" name="chat" id="chat" />
-              <label for="chat">Chat</label>
-            </div>
+      <div id="support-row">
+      <p style="color: aliceblue;"">What kind kind of support you are looking for?</p>
+      <div
+      style="display: flex; width: 50%"
+      onchange="handlerSupportOnchange()"
+      >
+      <div class="radio-container">
+        <input type="radio" name="chat" id="chat" />
+        <label style="color: aliceblue;" for="chat">Chat</label>
+      </div>
 
-            <div class="radio-container">
-              <input type="radio" name="support" id="support" />
-              <label for="support">Call</label>
-            </div>
-          </div>
-        </div>
+      <div class="radio-container">
+        <input type="radio" name="support" id="support" />
+        <label style="color: aliceblue;" for="support">Call</label>
+      </div>
+      </div>
+      </div>
       </div>
       <button class="get-help" onclick="openMeetingModal()">Get Help</button>
     </div>
 
-    <div id="#meetingModal" class="meetingModal">
+    <div id="#meetingModal" class="meetingModal" style="background-color: rgb(16, 53, 97);">
       <p
         style="
           color: grey;
@@ -296,13 +296,13 @@
           <section id="stream" class="container">
             <div>
               <div
-                style="flex: 0.5"
+                style="flex: 0.5; background-color: rgb(29, 94, 174);"
                 class="custom-fieldset"
                 id="local-video-section"
               >
                 <div style="position: relative">
                   <video id="local-video" class="stream-video" autoplay></video>
-                  <span class="participant-name">John Doe (Customer)</span>
+                  <span style="color: aliceblue;" class="participant-name">John Doe (Customer)</span>
                 </div>
                 <audio id="local-audio" autoplay controls></audio>
               </div>
@@ -314,8 +314,8 @@
                     class="stream-video"
                     autoplay
                   ></video>
-                  <span class="participant-name"
-                    >Steve (Support Executive)</span
+                  <span class="participant-name" style="color: aliceblue;"
+                    >(Support Executive)</span
                   >
                 </div>
                 <audio id="remote-audio" autoplay controls></audio>
@@ -363,9 +363,9 @@
                   >
                     <legend>VBG</legend>
                     <div style="display: flex">
-                      <input type="radio" name="vbg" id="" />
+                      <input type="radio" name="vbg-blur" id="vbg-blur" checked />
                       <p style="margin-right: 2rem">Blur</p>
-                      <input type="radio" name="vbg" id="" checked />
+                      <input type="radio" name="vbg-image" id="vbg-image" />
                       <p style="margin-right: 2rem">Image</p>
                       <button id="toggle-vbg-btn">Toggle VBG</button>
                     </div>

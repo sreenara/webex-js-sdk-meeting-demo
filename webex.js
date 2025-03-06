@@ -234,8 +234,8 @@ async function toggleVBG() {
 
   if (!vbgEffect) {
     vbgEffect = await webex.meetings.createVirtualBackgroundEffect({
-      mode: "IMAGE", // options are 'BLUR', 'IMAGE', 'VIDEO'
-      bgImageUrl: vbgImageUrl,
+      mode: "BLUR", // options are 'BLUR', 'IMAGE', 'VIDEO'
+      blurStrength: "STRONG",
       // bgVideoUrl: blurVBGVideoUrl,
     });
   }
