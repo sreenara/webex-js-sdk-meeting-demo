@@ -103,7 +103,7 @@ async function initWebexAndRegisterDevice(access_token) {
 async function createMeeting() {
   // MeetingInfo object being referenced from meeting-info.js
   // const meeting = await webex.meetings.create(meetingInfo.sipAddress);
-  const meeting = await webex.meetings.create('+19198871054');
+  const meeting = await webex.meetings.create('+19195552127');
 
   createdMeeting = meeting;
 }
